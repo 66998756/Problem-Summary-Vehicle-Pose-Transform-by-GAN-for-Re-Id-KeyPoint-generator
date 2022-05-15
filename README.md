@@ -1,5 +1,6 @@
 # Problem Summary: Vehicle Pose Transform by GAN for Re-Id KeyPoint generator
 This is a discuss and record for the summary about "Vehicle Pose Transform by GAN for Re-Id KeyPoint generator" problem.
+Now is working on the Sol.2., create another model to satisfy the GAN framework.
 
 ## Vehicle Pose Transform by GAN for Re-Id
 The structure of system framework is below:
@@ -29,5 +30,3 @@ without key-point, `generator` will fail to generate fake image.
 1. Take the average of the KeyPoints for each pose of all types, and use the average instead if a vehicle of a certain type does not have KeyPoint on a specific pose.
 2. **Create another model for generate vehicle KeyPoint.**
 3. If vehicle doesn't have KeyPoint on a specific pose, then use CycleGAN-like algo. to generate fake image, Else using original GAN.
-
-Now is working on the Sol.2., create another model to satisfy the GAN framework.
